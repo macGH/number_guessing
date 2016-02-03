@@ -1,28 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @macGH
- Watch 1
-  Star 0
-  Fork 0 tiyd-rails-2016-01/number_guessing
- Code  Issues 0  Pull requests 0  Wiki  Pulse  Graphs
-No description or website provided.
- 1 commit
- 1 branch
- 0 releases
- 1 contributor
- New file Find file
- HTTPS
-https://github.com/tiyd-rails-2016-01/number_guessing.git
-
-  Download ZIP Branch: master New pull request
-Latest commit 10906c6  22 hours ago @masonfmatthews masonfmatthews Initial commit.
-.homework.json	Initial commit.	22 hours ago
-README.md	Initial commit.	22 hours ago
- README.md
 Number Guessing Game
 Description
 
