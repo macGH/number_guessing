@@ -27,24 +27,26 @@ def in_the_right_direction? (ary, hint)
   end
 end
 
-user_guesses = []  #
+all_guesses = []  #
 user_guess = 0
 user_count = 0  #track number of guesses
 guess_max = 5   #max number of guess
-high_low = 0    #use -1 for lower, 0 for equal, 1 for higher
+high_low = 0    #use -1 to indicate lower, 0 for equal, 1 for higher
 
 
 until user_guess == rand_num || user_count == 5  #until correct guess or the max is hit
   user_guess = gather_user_input
+
+
   if user_guess == 0      #input was not valid
     puts "Basic math -- You haven't entered an integer between 1 and 100. Try again. \n\n"
 
-  elsif (user_guesses.count > 0) && (user_guesses.count(user_guess) > 0)  # was this guess already provided?
+  elsif (all_guesses.count > 0) && all_guesses.include?(user_guess)  # was this guess already provided?
     puts "Short term memory issues? You've already guessed #{user_guess}.  Try again. \n\n"
 
   elsif   #this is a valid guess
-    user_guesses << user_guess
-    in_the_right_direction?(user_guesses, high_low)
+    all_guesses << user_guess
+    in_the_right_direction?(all_guesses, high_low)
     if user_guess < rand_num
       puts "Pick a higher number: \n "
       high_low = 1
